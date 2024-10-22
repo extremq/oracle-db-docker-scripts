@@ -11,6 +11,7 @@ Depending on what OS you might need to install Docker differently. Please follow
 **MacOS**: Execute the script with admin access. I do not own a MacOS device to test.
 
 # Connecting to the server
+## With Visual Studio Code
 Install [Visual Studio Code](https://code.visualstudio.com/). Navigate to extensions and install "Oracle SQL Developer".
 
 After installing, you should be able to create a new connection.
@@ -18,3 +19,6 @@ After installing, you should be able to create a new connection.
 ![The connection screen](image.png)
 
 The password is `parola`. Mind that the DB storage is not persistent. This is only suitable for simple testing.
+
+## (Not recommended) sqlplus
+You can also directly connect inside the docker container using the `connect.sh` script. However, this gives you a really basic console with limited features. You may also use the `sqlplus` binary if your distribution packages it.
